@@ -6,9 +6,19 @@
     <link rel="stylesheet" href="css/output.css">
     <title>Glenn Smith Dentistry</title>
     <!-- annajonesdds.com -->
+
+    <style>
+        @media (min-width: 1024px) {
+            .lg\:h-2\/3 {
+                height: 66.6667vh; 
+            }
+        }
+    </style>
+    
+
 </head>
 <body>
-    <section class="sticky bg-slate-50 flex flex-col md:flex-row header">
+    <section class="sticky bg-slate-50 pb-8 flex flex-col md:flex-row header">
         <div class="flex-1  headerLogo">
             <h1 class="text-3xl text-black text-center p-3 md:text-left md:text-4xl">Glenn Smith D.D.S</h1>
         </div>
@@ -21,14 +31,21 @@
         </div>
     </section>
 
-    <section class="bg-black lg:max-h-screen overflow-hidden jumboSection">
-        <div class="absolute bg-black w-full max-h-screen"></div>
-        <img src="images/dentistry.jpg" alt="Some dentist Picture" class="w-full object-contain lg:max-h-full">
+    <section class="bg-white w-full lg:max-h-full overflow-hidden relative">
+        <div class="bg-white w-full h-full lg:h-full absolute top-0 left-0 opacity-60">
+           
+        </div>
+        <img src="images/dentistry.jpg" alt="Some dentist Picture" class="w-full object-cover lg:h-2/3 ">
+    </section>
+    
+     
+        
         
     </section>
 
-    <section class="bg-black h-48 mission">
-        <p class="text-white text-center text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt numquam,
+    <section class="bg-black h-64 mission">
+        <h2 class="text-white text-left pt-10 pb-2.5 text-3xl text-bold">Creating Happy Smiles</h2>
+        <p class="text-white text-left text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt numquam,
             dicta tenetur impedit recusandae enim consequatur aliquid reprehenderit 
             dolorum harum fuga porro et quia, quod culpa voluptatum soluta minima. Cum!</p>
     </section>
