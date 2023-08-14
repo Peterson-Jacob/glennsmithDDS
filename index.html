@@ -15,7 +15,7 @@
 <body>
     <section class="sticky top-0 z-10 bg-slate-50 pb-4 flex flex-col md:flex-row header">
         <div class="flex-1  headerLogo">
-            <h1 class="text-3xl text-black text-center pt-3 pl-4 md:text-left md:text-4xl">Glenn Smith D.D.S</h1>
+            <h1 class="text-3xl text-black text-center pt-3 pl-4 italic md:text-left md:text-4xl">Glenn Smith D.D.S</h1>
         </div>
 
         <div class="flex-1 headerNav">
@@ -88,65 +88,67 @@
         </div>
         <img src="images/dentistry.jpg" alt="Some dentist Picture" class="w-full object-cover h-96">
         
-        <div class="absolute top-0 left-0 z-10 review">
-            <h2 class="text-white text-3xl text-bold p-4">Dr. Glenn is the Best!</h2>
-            <p class="text-white text-base p-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. At est,
+        <div class="absolute inset-0 z-10 review">
+            <h2 class="text-white text-3xl text-bold text-center mt-10 lg:text-4xl">Dr. Glenn is the Best!</h2>
+            <p class="text-2xl text-center text-yellow-400 "> &#9733 &#9733 &#9733 &#9733 &#9733</p>
+            <p class="text-white text-base text-center my-4 mx-auto w-4/5 2xl:w-1/2 lg:text-xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. At est,
                 rem facilis minus ratione ipsam nobis tempore sit fuga laboriosam nulla 
                 adipisci repellat id modi dolorum, iusto nesciunt error deserunt.</p>
         </div>
     </section>
     
 
-    <section class="locationSection">
-        <div class="map">
-            <map name="location"></map>
+    <section class="flex flex-col my-5 md:flex-row  locationSection">
+        <div class="w-11/12 my-10 mx-auto  flex-1 map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13259.520224957461!2d-94.55884203039851!3d33.81540824981501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x863505ef17576233%3A0x5116751482145280!2sAmerica%2C%20OK%2074740!5e0!3m2!1sen!2sus!4v1692039875738!5m2!1sen!2sus" 
+            class="w-full h-96 mx-auto md:w-3/4 2xl:w-1/2" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <div class="locationInfo">
-            <h2>Become a patients, today!</h2>
-            <p>123 fake st</p>
-            <p>America, Ok 77447</p>
-            <li>(999) 555-1234</li>
+        <div class="text-left w-11/12 my-0 mx-auto flex-1 md:text-center md:my-20 locationInfo">
+            <h2 class="text-2xl md:text-3xl">Become a patients, today!</h2>
+            <p class=" pt-1 mt-2 md:text-lg">123 fake st</p>
+            <p class=" pt-1 md:text-lg">America, Ok 77447</p>
+            <li class="list-none pt-1 md:text-lg">(999) 555-1234</li>
         </div>
     </section>
 
-    <section class="appointment">
+    <section class="w-full h-full bg-stone-200 appointment">
 
-        <div class="appointmentForm">
-            <form action="">
+        <div class="w-11/12 my-0 mx-auto py-14  appointmentForm">
+            <form class="" action="">
                 <label for="fname">First Name</label>
-                <input type="text" id="fname">
+                <input class="w-full mb-5 py-2" type="text" id="fname">
 
                 <label for="lname">Last Name</label>
-                <input type="text" id="lname">
+                <input class="w-full mb-5 py-2" type="text" id="lname">
 
                 <label for="email">Email</label>
-                <input type="text" id="email">
+                <input class="w-full mb-5 py-2" type="text" id="email">
 
                 <label for="subject">Subject</label>
-                <input type="text" id="subject">
+                <input class="w-full mb-5 py-2" type="text" id="subject">
 
                 <label for="message">Message</label>
-                <textarea  id="message" cols="30" rows="10" ></textarea>
+                <textarea class="w-full mb-5 h-48"  id="message" ></textarea>
 
-                <input type="button" value="Submit">
+                <input class="bg-black text-white text-lg font-bold py-2 px-5" type="button" value="Submit">
             </form>
         </div>
     </section>
 
-    <section class="footer">
+    <section class="bg-zinc-700 footer">
         <div class="footerLogo">
-            <img src="images/logo.png" alt="Glenn Smith logo">
+            <img src="images/logo.png" alt="Glenn Smith logo" class="w-1/2">
         </div>
-        <div class="footerInfo">
+        <div class="text-white text-center py-2 footerInfo">
             <div class="contactInfo">
-                <h3>contact Us</h3>
+                <h3 class="text-2xl">contact Us</h3>
                 <p>123 fake st</p>
                 <p>America, Ok 77447</p>
                 <p>(999) 555-1234</p>
             </div>
 
             <div class="officeHours">
-                <h3>Office Hours</h3>
+                <h3  class="text-2xl">Office Hours</h3>
                 <p>Mon - Wed: 8am - 5pm</p>
                 <p>Thu: 8am - 2pm</p>
                 <p>Fri - Sun: Closed</p>
