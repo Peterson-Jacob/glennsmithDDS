@@ -9,23 +9,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
     <title>Glenn Smith Dentistry</title>
-    <!-- annajonesdds.com -->
-
-    
-    
 
 </head>
 <body class="bg-white">
     <div class="bg-white shadow-lg shadow-black  page">
     <section class="sticky top-0 z-10 bg-slate-50 pb-4 flex flex-col md:flex-row header">
         <div class="flex-1  headerLogo">
-            <h1 class="text-3xl text-black text-center pt-3 pl-4 font-Cederville md:text-left md:text-4xl">Glenn Smith D.D.S</h1>
+            <h1 class="text-3xl text-black text-center pt-5 pl-4 font-Cederville md:text-left md:text-4xl"><a href="#">Glenn Smith D.D.S</a></h1>
         </div>
 
         <div class="flex-1 headerNav">
             <ul class="w-full text-center pt-4 md:text-right">
-                <li class="inline-block mr-5 mb-2 py-0.5 px-5 border-2 border-black md:text-lg md:mt-1">Contact US</li>
-                <li class="inline-block mr-5 py-0.5 px-5 border-2 border-black md:text-lg md:mt-1">(999) 555-1234</li>
+                <li class="inline-block mr-5 mb-2 py-0.5 px-5 border-3 border-black hover:bg-black hover:text-white cursor-pointer md:text-lg "><a href="#appointment">Contact US</a></li>
+                <li class="inline-block mr-5 py-0.5 px-5 border-3 border-black hover:bg-black hover:text-white cursor-pointer md:text-lg "><a href="tel:+9995551234">(999) 555-1234</a></li>
             </ul>
         </div>
     </section>
@@ -119,9 +115,16 @@
         </div>
     </section>
 
-    <section class="w-full h-full bg-stone-400 appointment">
+    <section class="w-full h-full py-8 bg-stone-400 appointment" id="appointment">
+        <div class="w-11/12 my-0 mx-auto py-8 md:w-2/3 lg:w-1/2 2xl:w-1/3 apptMessage">
+            <h2 class="text-2xl font-semibold md:text-3xl">REQUEST AN APPOINTMENT</h2>
+            <p class=" pt-1 text-lg md:text-xl">
+                To arrange an appointment, please either dial our office at (999) 555-1234 or complete the provided request form,
+                indicating your preferred appointment timing. We'll promptly reach out to you to verify your visit's schedule.
+            </p>
+        </div>
 
-        <div class="w-11/12 my-0 mx-auto py-14 md:w-2/3 lg:w-1/2 2xl:w-1/3 appointmentForm">
+        <div class="w-11/12 my-0 mx-auto py-8 md:w-2/3 lg:w-1/2 2xl:w-1/3 appointmentForm">
             <form class="text-lg md:text-xl index.html" action="post">
                 <label for="text-lg fname">First Name</label>
                 <input class="w-full mb-5 py-2" type="text" id="fname">
@@ -138,7 +141,7 @@
                 <label for=" message">Message</label>
                 <textarea class="w-full mb-5 h-48"  id="message" ></textarea>
 
-                <input class="bg-black text-white text-lg font-bold py-2 px-5" type="button" value="SUBMIT">
+                <input class="bg-black text-white text-lg font-bold py-2 px-5 cursor-pointer" type="button" value="SUBMIT">
             </form>
         </div>
     </section>
