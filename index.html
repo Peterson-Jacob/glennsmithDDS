@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="index.js" defer></script>
     <title>Glenn Smith Dentistry</title>
 
 </head>
@@ -26,12 +29,12 @@
         </div>
     </section>
 
-    <section class="bg-white w-full  lg:h-full overflow-hidden relative">
+    <section class="bg-white w-full  lg:h-full overflow-hidden relative jumbo">
         <div class="bg-white w-full h-full lg:h-full absolute top-0 left-0 opacity-70">
            
         </div>
         <img src="images/dentistry.jpg" alt="Some dentist Picture" class="w-full  object-cover lg:h-2/3">
-        <img src="images/black_logo2.png" alt="Glenn Smith Logo" class="w-2/3 mt-0 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:w-2/5 md:mt-0 2xl:w-1/4" >
+        <img src="images/black_logo2.png" alt="Glenn Smith Logo" class="w-2/3 mt-0 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 md:w-2/5 md:mt-0 2xl:w-1/4 logo" >
     </section>
     
      
@@ -39,8 +42,8 @@
         
     </section>
 
-    <section class="bg-black h-full lg:h-64 mission">
-        <div class="w-11/12 my-0 py-5 mx-auto 2xl:w-2/3">
+    <section class="bg-black h-full lg:h-64  mission">
+        <div class="w-11/12 my-0 mx-auto py-5 opacity-0 2xl:w-2/3 statement">
             <h2 class="text-white text-left pt-5 pb-2.5 px-2 text-3xl font-bold lg:pt-4">Creating Happy Smiles</h2>
             <p class="text-white text-left text-lg lg:text-xl pb-2 px-2"> Dr. Glenn Smith and, our experienced team is committed to delivering personalized, 
                 state-of-the-art dental solutions tailored to your unique needs. Whether you're seeking routine check-ups,
@@ -50,10 +53,10 @@
 
     <section class=" 2xl:w-2/3 2xl:my-0 2xl:mx-auto infoSection">
         <div class="flex flex-col lg:flex-row lg:my-10 infoDentist">
-            <div class="ddsPicture flex-1 ">
-                <img src="images/drGlenn2.jpg" alt="pic of Glenn" class="w-4/5 my-0 mx-auto py-5 md:w-2/3 lg:w-3/4 ">
+            <div class="flex-1 ">
+                <img src="images/drGlenn2.jpg" alt="pic of Glenn" class="w-4/5 my-0 mx-auto py-5 md:w-2/3 lg:w-3/4 ddsPicture">
             </div>
-            <div class="w-11/12 my-0 mx-auto pb-5 ddsInfo flex-1 lg:my-4 2xl:my-2">
+            <div class="w-11/12 my-0 mx-auto pb-5 opacity-0 flex-1 lg:my-4 2xl:my-2 ddsInfo">
                 <h2 class="text-black text-3xl font-semibold lg:text-4xl">Meet Dr. Smith</h2>
                 <p class="w-11/12 my-3 text-lg lg:text-xl"> Dr. Glenn Smith stands as a cornerstone of excellence in the field of dentistry.
                      With extensive experience and a commitment to continuous learning, Dr. Smith has earned a reputation for his unparalleled
@@ -67,7 +70,7 @@
         </div>
 
         <div class="flex flex-col lg:flex-row serviceInfo">
-            <div class="w-11/12 my-0 mx-auto pb-10 flex-1 lg:my-8 services">
+            <div class="w-11/12 my-0 mx-auto pb-10 flex-1 opacity-0 lg:my-8  services">
                 <h2 class="text-black text-3xl font-semibold lg:text-center lg:text-4xl">Our Services</h2>
 
                 <ul class="pl-3 lg:text-center text-lg lg:text-xl">
@@ -79,8 +82,8 @@
                     <li class="pt-3">Tooth-Colored Fillings</li>
                 </ul>
             </div>
-            <div class="flex-1 patientPic">
-                <img src="images/patientzero.jpg" alt="Picture of Patient" class="w-11/12 my-0 mx-auto pb-10">
+            <div class="flex-1">
+                <img src="images/patientzero.jpg" alt="Picture of Patient" class="w-11/12 my-0 mx-auto pb-10 opacity-1 patientPic">
             </div>
         </div>
     </section>
