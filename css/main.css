@@ -1,7 +1,15 @@
+
 .lg\:h-2\/3 {
     height: 66.666667vh;
  }
 
+.header h1{
+   text-shadow: 0px 0px 2px black;
+}
+
+.ddsPicture, .patientPic{
+   box-shadow: 0px 0px 10px black;
+}
 
  @media only screen and (min-width: 2400px){
 
