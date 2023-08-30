@@ -14,9 +14,8 @@ let infoTL = gsap.timeline({
     }
   })
 
-  infoTL.add("join");
-  infoTL.from('.ddsPicture', {opacity: 0, duration: 2}, "join");
-  infoTL.to('.ddsInfo', {opacity: 1, delay: 1, duration: 2}, "join");
+  infoTL.from('.ddsPicture', {opacity: 0, duration: 1});
+  infoTL.to('.ddsInfo', {opacity: 1, duration: 1});
 
   let serviceTL = gsap.timeline({
     scrollTrigger:{
@@ -29,9 +28,8 @@ let infoTL = gsap.timeline({
     }
   })
 
-  serviceTL.add("sjoin")
-  serviceTL.from('.patientPic', {opacity: 0, duration: 3}, "sjoin");
-  serviceTL.to('.services', { opacity: 1, delay: 1, duration: 3}, "sjoin");
+  serviceTL.from('.patientPic', {opacity: 0, duration: 1});
+  serviceTL.to('.services', { opacity: 1, duration: 1});
   //serviceTL.to('services', {paddingTop: 40, duration: 3}, "sjoin");
 
   let reviewTL = gsap.timeline({
@@ -61,3 +59,18 @@ let infoTL = gsap.timeline({
   locationTL.add("join")
   locationTL.to('.map', {opacity: 1, duration: 2}, "join");
   locationTL.to('.locationInfo', {opacity: 1, duration: 2}, "join");
+
+  let appointTL = gsap.timeline({
+    scrollTrigger:{
+      trigger: '.appointment',
+      start: 'top center',
+      end: 'bottom center',
+      scrub: false,
+      markers: false,
+      toggleActions: 'play complete'
+    }
+  })
+
+  appointTL.add("join");
+  appointTL.to('.apptMessage', {opacity: 1, duration: 2}, 'join');
+  appointTL.to('.appointmentForm', {opacity: 1, duration: 2}, 'join');
