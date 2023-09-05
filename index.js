@@ -1,6 +1,6 @@
 
 gsap.to(".logo",{opacity: 1, duration: 3});
-gsap.to(".statement",{opacity: 1, duration: 2});
+gsap.to(".statement",{opacity: 1,  duration: 1});
 
 
 let infoTL = gsap.timeline({
@@ -43,7 +43,7 @@ let infoTL = gsap.timeline({
     }
   })
 
-  reviewTL.to('.review', {marginTop: 0, opacity: 1, duration: 1});
+  reviewTL.to('.review', {marginTop: 10, opacity: 1, duration: 1});
 
   let locationTL = gsap.timeline({
     scrollTrigger:{
